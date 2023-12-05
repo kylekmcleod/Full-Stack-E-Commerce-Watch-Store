@@ -41,6 +41,9 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 60px;
+            background-image: url('img/back.jpg'); /* Add your background image URL */
+            background-size: cover; /* Adjust background size */
+            background-position: center; /* Center the background */
         }
         .card {
             width: 400px;
@@ -99,6 +102,41 @@
             margin: 20px auto; /* Adjust the margins to center the line */
             max-width: 1200px; /* Set a maximum width */
         }
+		footer {
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			padding: 20px 0;
+		}
+
+		footer .copyright {
+			font-size: 14px;
+		}
+		.image-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .image-text-container img {
+            max-width: 20%;
+            margin-right: 20px;
+            border: 1px solid #1c1c1c; /* Added border around the image */
+            padding: 5px; /* Added padding inside the border */
+        }
+
+        .image-text-container p {
+            max-width: 30%;
+            font-size: 18px; /* Increased font size */
+        }
+
+        .image-text-container h3 {
+            font-size: 22px; /* Title font size */
+            margin-bottom: 10px;
+            text-align: left; /* Align the title to the left */
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
@@ -138,12 +176,31 @@
             <a href="listprod.jsp?productName=Grand%20Seiko" class="card-button">Shop Now</a>
         </div>
     </div>
-<div class="line"></div>
+
+	<!-- About us -->
+	<div class="line"></div>
 	<div class="about-us">
         <h2>About Us</h2>
         <p>Time Piece vault is dedicated to offering elegant, high-quality watches that enhance personal style and represent excellence in craftsmanship. 
 		We aim to be a trusted symbol of sophistication, curating a diverse range of designs and manufacturers to cater to every watch enthusiast.</p>
     </div>
+	<br></br>
+	<div class="line"></div>
+
+	<div class="image-text-container">
+	
+            <img src="img\rolex1.jpg" alt="Image Description">
+            <p>
+                We are proud to offer Rolex watches to our customers. Since its start in 1905, Rolex has symbolized innovation and quality in watchmaking. Over the years, it's become a beacon of precision and luxury, 
+				adorning the wrists of pioneers and icons. Rolex's legacy is built on a commitment to exquisite craftsmanship and timeless elegance.
+            </p>
+    </div>
+
+	<footer>
+        <div class="copyright">
+            <p>&copy; 2023 Time Piece Vault. All rights reserved.</p>
+        </div>
+    </footer>
 
 
     <%

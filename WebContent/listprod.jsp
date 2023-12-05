@@ -91,6 +91,16 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+		footer {
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			padding: 20px 0;
+		}
+
+		footer .copyright {
+			font-size: 14px;
+		}
 		
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -119,6 +129,7 @@
     <input type="text" name="productName" size="50">
     <input type="submit" value="Submit"><input type="reset" value="Reset"> (Leave blank for all products)
 </form>
+
 
 <table border="0">
     <tr>
@@ -193,7 +204,15 @@
                 }
              }
     %>
+
+	
 </table>
 </body>
+
+<footer>
+        <div class="copyright">
+            <p>&copy; 2023 Time Piece Vault. All rights reserved.</p>
+        </div>
+</footer>
 </html>
 
