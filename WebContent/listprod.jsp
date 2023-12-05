@@ -10,8 +10,8 @@
             font-family: 'EB Garamond', serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5; 
-            color: #000; 
+            background-color: #f5f5f5; /* Very light grey */
+            color: #000; /* Black text */
         }
         h1, h2 {
             text-align: center;
@@ -54,9 +54,8 @@
         }
         /* Updated header styles */
         header {
-            background-color: #000; /* Black */
-            color: white;
-            padding: 10px 0;
+            background-color: #000; /* Black header */
+            padding: 20px 0;
             text-align: center;
         }
         header a {
@@ -75,17 +74,44 @@
         .add-to-cart-btn:hover {
             background-color: #171717; /* Darker shade of blue on hover */
         }
+		.logo img {
+            max-width: 300px; /* Adjust the width as needed */
+        }
+		nav {
+            background-color: #fff; /* White navigation */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000; /* Black link text */
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+		
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header Section -->
-<header>
-    <a href="index.jsp">Home</a>
-    <a href="showcart.jsp">Cart</a>
-    <a href="login.jsp">Login</a>
-    <a href="logout.jsp">Logout</a>
-</header>
+
+	<header>
+        <div class="logo">
+            <img src="img\logowhitecrop.jpg" alt="Logo">
+        </div>
+    </header>
+
+    <nav>
+		<a href="index.jsp">Home</a>
+        <a href="listprod.jsp">Shop</a>
+        <a href="listorder.jsp">List All Orders</a>
+        <a href="customer.jsp">Customer Info</a>
+        <a href="admin.jsp">Administrators</a>
+        <a href="login.jsp">Login</a>
+        <a href="logout.jsp">Log out</a>
+    </nav>
 
 <h1>Search:</h1>
 
