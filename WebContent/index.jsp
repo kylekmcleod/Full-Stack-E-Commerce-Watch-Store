@@ -137,6 +137,14 @@
             margin-bottom: 10px;
             text-align: left; /* Align the title to the left */
         }
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .user-info p {
+            margin-left: 20px;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
@@ -203,10 +211,5 @@
     </footer>
 
 
-    <%
-        String userName = (String) session.getAttribute("authenticatedUser");
-        if (userName != null)
-            out.println("<p align=\"center\">Signed in as: " + userName + "</p>");
-    %>
 </body>
 </html>

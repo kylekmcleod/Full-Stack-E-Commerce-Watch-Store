@@ -15,6 +15,7 @@
 		response.sendRedirect("index.jsp");		// Successful login
 	else
 		response.sendRedirect("login.jsp");		// Failed login - redirect back to login page with a message 
+		session.setAttribute("loginMessage", "Invalid username/password."); // Set error message for incorrect login
 %>
 
 
@@ -46,7 +47,7 @@
             retStr = rs.getString("userid");
         	}
 		} 
-		catch (SQLException ex) {m
+		catch (SQLException ex) {
 			out.println(ex);
 		}
 		finally {
