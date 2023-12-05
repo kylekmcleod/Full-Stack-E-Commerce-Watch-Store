@@ -79,7 +79,6 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
 </head>
 <body>
-
 <!-- Header Section -->
 <header>
     <a href="index.jsp">Home</a>
