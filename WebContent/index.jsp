@@ -50,7 +50,6 @@
 		<a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
     </nav>
-
     <%
         String userName = (String) session.getAttribute("authenticatedUser");
         if (userName != null)
