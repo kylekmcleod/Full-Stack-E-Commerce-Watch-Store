@@ -47,7 +47,7 @@
         }
         .card {
             width: 400px;
-            margin: 0px; /* Adjusted margin */
+            margin: 5px; /* Adjusted margin */
             padding: 15px;
             background-color: #fff;
             border-radius: 8px;

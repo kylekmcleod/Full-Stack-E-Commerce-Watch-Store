@@ -4,7 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Justin Kyle Shop</title>
     <style>
         body {
             font-family: 'EB Garamond', serif;
@@ -195,9 +194,11 @@
                         </td>
 						<td>
 							<form method="post" action="addcart.jsp">
-							<input type="hidden" name="productId" value="<%= productId %>">
-							<input type="submit" class="add-to-cart-btn" value="Add to Cart">
-							</form>
+                            <input type="hidden" name="id" value="<%= productId %>">
+                            <input type="hidden" name="name" value="<%= URLEncoder.encode(rst.getString("productName"), "UTF-8") %>">
+                            <input type="hidden" name="price" value="<%= rst.getDouble("productPrice") %>">
+                            <input type="submit" class="add-to-cart-btn" value="Add to Cart">
+                            </form>
 						</td>
                     </tr>
     <%
