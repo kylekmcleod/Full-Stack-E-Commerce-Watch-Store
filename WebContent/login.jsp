@@ -149,6 +149,7 @@
         <a href="admin.jsp">Administrators</a>
         <a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
+        <a href="showcart.jsp">View Cart</a>
     </nav>
 
 <div style="margin:0 auto;text-align:center;display:inline">

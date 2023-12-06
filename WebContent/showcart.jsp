@@ -144,6 +144,7 @@
         <a href="admin.jsp">Administrators</a>
         <a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
+        <a href="showcart.jsp">View Cart</a>
     </nav>
 
 <%
@@ -189,7 +190,7 @@ else
 		}
 		catch (Exception e)
 		{
-			out.println("Invalid price for product: "+product.get(0)+" price: "+price);
+			
 		}
 		try
 		{
@@ -197,7 +198,7 @@ else
 		}
 		catch (Exception e)
 		{
-			out.println("Invalid quantity for product: "+product.get(0)+" quantity: "+qty);
+			
 		}		
 
 		out.print("<td align=\"right\">"+currFormat.format(pr)+"</td>");
@@ -213,6 +214,8 @@ else
 %>
 <h2 class="checkout-button"><a href="checkout.jsp">Checkout</a></h2>
 <h2><a href="listprod.jsp" class="continue-shopping">Continue Shopping</a></h2>
+
+
 
 	<footer>
         <div class="copyright">

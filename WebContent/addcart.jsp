@@ -17,7 +17,13 @@ String name = request.getParameter("name");
 String price = request.getParameter("price");
 String quantity = request.getParameter("quantity");
 
-int quantity2 = Integer.parseInt(quantity);
+Integer quantity2;
+if(quantity == null || quantity.isEmpty()){
+    quantity2 = 1;
+} else {
+quantity2 = Integer.parseInt(quantity);    
+}
+
 
 // Store product information in an ArrayList
 ArrayList<Object> product = new ArrayList<Object>();

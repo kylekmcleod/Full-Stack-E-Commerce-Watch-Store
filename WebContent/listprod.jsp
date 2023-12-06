@@ -100,6 +100,10 @@
 		footer .copyright {
 			font-size: 14px;
 		}
+        nav a:hover {
+            background-color: #000; /* Black hover background */
+            color: #fff; /* White hover text */
+        }
 		
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -110,6 +114,7 @@
         <div class="logo">
             <img src="img\logowhitecrop.jpg" alt="Logo">
         </div>
+        
     </header>
 
     <nav>
@@ -120,13 +125,14 @@
         <a href="admin.jsp">Administrators</a>
         <a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
+        <a href="showcart.jsp">View Cart</a>
     </nav>
 
 <h1>Search:</h1>
 
 <form method="get" action="listprod.jsp">
     <input type="text" name="productName" size="50">
-    <input type="submit" value="Submit"><input type="reset" value="Reset"> (Leave blank for all products)
+    <input type="submit" value="Submit"><input type="reset" value="Reset">
 </form>
 
 

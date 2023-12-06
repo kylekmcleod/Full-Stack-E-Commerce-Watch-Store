@@ -111,6 +111,7 @@
         <a href="admin.jsp">Administrators</a>
         <a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
+        <a href="showcart.jsp">View Cart</a>
     </nav>
 
 <%@ page import="java.text.NumberFormat" %>
