@@ -118,6 +118,7 @@
             color: white;
             border-radius: 5px;
             text-decoration: none;
+            font-weight: 300;
         }
 
         .checkout-button:hover,
@@ -144,7 +145,6 @@
         <a href="admin.jsp">Administrators</a>
         <a href="login.jsp">Login</a>
         <a href="logout.jsp">Log out</a>
-        <a href="showcart.jsp">View Cart</a>
     </nav>
 
 <%
@@ -212,7 +212,7 @@ else
 
 }
 %>
-<h2 class="checkout-button"><a href="checkout.jsp">Checkout</a></h2>
+<h2><a href="checkout.jsp" class="continue-shopping">Checkout</a></h2>
 <h2><a href="listprod.jsp" class="continue-shopping">Continue Shopping</a></h2>
 
 
