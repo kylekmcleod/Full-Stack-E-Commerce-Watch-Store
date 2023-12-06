@@ -125,6 +125,15 @@
         .continue-shopping:hover {
             background-color: #171717;
         }
+        .clear-cart {
+        color: white;
+        background-color: #80211b; /* Red background color */
+        /* Add any additional styles as needed */
+        }
+            .button-container {
+        display: flex;
+        justify-content: space-around; /* Adjust this as needed */
+        }
 		
     </style>
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -212,11 +221,11 @@ else
 
 }
 %>
+<div class="button-container">
 <h2><a href="checkout.jsp" class="continue-shopping">Checkout</a></h2>
 <h2><a href="listprod.jsp" class="continue-shopping">Continue Shopping</a></h2>
-
-
-
+<h2><a href="clearcart.jsp" class="continue-shopping clear-cart">Clear Cart</a></h2>
+</div>
 	<footer>
         <div class="copyright">
             <p>&copy; 2023 Time Piece Vault. All rights reserved.</p>
