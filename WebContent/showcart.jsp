@@ -83,11 +83,14 @@
             max-width: 1200px; /* Set a maximum width */
         }
 		footer {
-			background-color: #000;
-			color: #fff;
-			text-align: center;
-			padding: 20px 0;
-		}
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        }
 
 		footer .copyright {
 			font-size: 14px;
@@ -178,6 +181,7 @@ else
 	while (iterator.hasNext()) 
 	{	Map.Entry<String, ArrayList<Object>> entry = iterator.next();
 		ArrayList<Object> product = (ArrayList<Object>) entry.getValue();
+        String productId = entry.getKey(); // Retrieve the product ID
 		if (product.size() < 4)
 		{
 			out.println("Expected product with four entries. Got: "+product);

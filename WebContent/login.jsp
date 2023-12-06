@@ -80,11 +80,14 @@
             max-width: 1200px; /* Set a maximum width */
         }
 		footer {
-			background-color: #000;
-			color: #fff;
-			text-align: center;
-			padding: 20px 0;
-		}
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        }
 
 		footer .copyright {
 			font-size: 14px;
@@ -168,7 +171,11 @@
             </form>
         </div>
     </div>
-
+<footer>
+        <div class="copyright">
+            <p>&copy; 2023 Time Piece Vault. All rights reserved.</p>
+        </div>
+	</footer>
 </body>
 </html>
 
