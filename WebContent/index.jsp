@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kyle and Justin's Grocery Main Page</title>
+    <title>Time Piece Vault Home</title>
     <style>
         body {
             font-family: 'EB Garamond', serif;

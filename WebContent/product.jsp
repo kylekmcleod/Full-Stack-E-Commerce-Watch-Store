@@ -117,7 +117,7 @@
 
         .product-details h2 {
         margin-bottom: 10px;
-        font-size: 38px; /* Adjust the font size as needed */
+        font-size: 34px; /* Adjust the font size as needed */
         font-weight: 300;
         }   
         .product-details h4 {

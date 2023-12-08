@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kyle and Justin Grocery Order List</title>
+    <title>Time Piece Vault Orders</title>
     <style>
         body {
             font-family: 'EB Garamond', serif;

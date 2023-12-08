@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Time Piece Vault Cart</title>
 <style>
         body {
             font-family: 'EB Garamond', serif;
