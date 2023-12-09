@@ -105,6 +105,33 @@
             background-color: #000; /* Black hover background */
             color: #fff; /* White hover text */
         }
+        .brand-btn-container {
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        /* Styles for the brand buttons */
+        .brand-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #363636; /* Blue color, adjust as needed */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .brand-btn:hover {
+            background-color: #171717; /* Darker shade of blue on hover */
+        }
+        .reset-btn {
+        background-color: #8B0000; /* Dark red color */
+        }
+
+        .reset-btn:hover {
+        background-color: #640000; /* Darker shade of red on hover */
+        }
 		
     </style>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
@@ -135,7 +162,16 @@
     <input type="text" name="productName" size="50">
     <input type="submit" value="Submit"><input type="reset" value="Reset">
 </form>
-
+<div class="brand-btn-container">
+<h1>Filter by Brand:</h1>
+<a href="listprod.jsp?category=1" class="brand-btn">Rolex</a>
+<a href="listprod.jsp?category=2" class="brand-btn">Patek Philippe</a>
+<a href="listprod.jsp?category=3" class="brand-btn">Audemars Piguet</a>
+<a href="listprod.jsp?category=4" class="brand-btn">Omega</a>
+<a href="listprod.jsp?category=5" class="brand-btn">Grand Seiko</a>
+<a href="listprod.jsp?category=6" class="brand-btn">Cartier</a>
+<a href="listprod.jsp?" class="brand-btn reset-btn">Reset</a>
+</div>
 
 <table border="0">
     <tr>
@@ -147,6 +183,9 @@
     <%
         // Get product name to search for
         String name = request.getParameter("productName");
+        String category = request.getParameter("category");
+
+        
         if(name == null || name.isEmpty()){
     %>
         <h2>All Products</h2>
@@ -175,9 +214,15 @@
         String password = "304#sa#pw";
 
         String s = "SELECT productName, productPrice, productId, productImageURL FROM product WHERE productName LIKE ?";
+        if (category != null && !category.isEmpty()) {
+            s += " AND categoryId = ?";
+        }
 
         try (Connection con = DriverManager.getConnection(url, user, password);
              PreparedStatement pst = con.prepareStatement(s);) {
+                if (category != null && !category.isEmpty()) {
+                    pst.setInt(2, Integer.parseInt(category));
+                }
                 if(name == null || name.isEmpty()) {
                     pst.setString(1, "%");
                 } else {
