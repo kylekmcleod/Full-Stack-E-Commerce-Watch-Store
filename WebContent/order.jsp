@@ -116,16 +116,20 @@
         </div>
     </header>
 
-    <nav>
-        <a href="index.jsp">Home</a>
-        <a href="listprod.jsp">Shop</a>
-        <a href="listorder.jsp">List All Orders</a>
-        <a href="customer.jsp">Customer Info</a>
-        <a href="admin.jsp">Administrators</a>
+<% String authenticatedUser = (String) session.getAttribute("authenticatedUser"); %>
+<nav>
+    <a href="index.jsp">Home</a>
+    <a href="listprod.jsp">Shop</a>
+    <a href="listorder.jsp">List All Orders</a>
+    <a href="customer.jsp">Customer Info</a>
+    <a href="admin.jsp">Administrators</a>
+    <% if (authenticatedUser != null && !authenticatedUser.isEmpty()) { %>
+        <a href="logout.jsp">Log Out ( <%= authenticatedUser %> )</a>
+    <% } else { %>
         <a href="login.jsp">Login</a>
-        <a href="logout.jsp">Log out</a>
-        <a href="showcart.jsp">View Cart</a>
-    </nav>
+    <% } %>
+    <a href="showcart.jsp">View Cart</a>
+</nav>
 
 <% 
 
