@@ -155,6 +155,7 @@
         <a href="logout.jsp">Log Out ( <%= authenticatedUser %> )</a>
     <% } else { %>
         <a href="login.jsp">Login</a>
+        <a href="createAcc.jsp">Create Account</a>
     <% } %>
     <a href="showcart.jsp">View Cart</a>
 </nav>
