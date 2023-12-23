@@ -1,2 +1,15 @@
-# COSC-304-Final-Project
-Time Piece vault is dedicated to offering elegant, high-quality watches that enhance personal style and represent excellence in craftsmanship. We aim to be a trusted symbol of sophistication, curating a diverse range of designs and manufacturers to cater to every watch enthusiast.
+## Full Stack Watch E-Commerce Webpage
+
+A final partner project for COSC 304. E-commerce watch store built with HTML, Java and MySQL database.
+
+## Features
+
+- **CSS Design**: Design using CSS and HTML.
+- **MySQL Database**: Functional database to keep track of orders, products, customers and more.
+
+## Built Using
+
+- HTML
+- CSS
+- Java
+- MySQL
