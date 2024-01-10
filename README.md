@@ -7,6 +7,7 @@ Built by Kyle McLeod and Justin Drenka.
 
 - **CSS Design**: Design using CSS and HTML.
 - **MySQL Database**: Functional database to keep track of orders, products, customers and more.
+- **JDBC**: Uses JDBC to access and connect to SQL database.
 
 ## Built Using
 
